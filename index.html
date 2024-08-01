@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+</head>
+<body>
+    <nav class="navbar navbar2 navbar-expand-lg position-fixed w-100  " id="navbar" >
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Bootstrap" width="40" height="30">
+            </a>
+          <a class="navbar-brand fw-semibold border-end border-dark-subtle pe-2" href="#">TuHogar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown srvc-btn">
+                <a class="btn dropdown-toggle btn-outline-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>S</span>ervices
+                </a>
+                <ul class="dropdown-menu mt-2">
+                  <li><a class="dropdown-item fw-semibold" href="#">Furniture Assembly</a></li>
+                  <li><a class="dropdown-item fw-semibold" href="#">Electrical Help</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item fw-semibold" href="#">Plumbing</a></li>
+                  <li><a class="dropdown-item fw-semibold" href="#">Painting</a></li>
+                  <li><a class="dropdown-item fw-semibold" href="#">Cleaning Services</a></li>
+                  <li><a class="dropdown-item fw-semibold" href="#">Delivery Service</a></li>
+                  <li><a class="dropdown-item fw-semibold" href="#">All Services</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 border-dark focus-ring focus-ring-light  text-decoration-none " type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-dark me-2 " type="submit">Search</button>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Login
+                </button>
+                
+                <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog ">
+                    <div class="modal-content ">
+                        <div class="modal-header bg-dark" >
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                            <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body pop-up">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control border-dark" id="exampleFormControlInput1">
+                                <div id="passwordHelpBlock" class="form-text">
+                                   We'll never share your email with anyone else.
+                                </div>
+
+                                <label for="inputPassword5" class="form-label mt-3">Password</label>
+                                <input type="password" id="inputPassword5" class="form-control border-dark" aria-describedby="passwordHelpBlock">
+
+                                <div class="form-check form-switch  mt-3 ms-5 ">
+                                    <input class="form-check-input " type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                                    <label class="form-check-label  " for="flexSwitchCheckDefault">Remmember me</label>
+                                  </div>
+                            </div>
+
+                        <div class="modal-footer d-flex justify-content-between border-secondary">
+                            <button type="button" class="btn btn-secondary">Login</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </form>
+            
+          </div>
+        </div>
+      </nav>
+
+
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner ">
+          <div class="carousel-item active h-100" data-bs-interval="10000">
+            <img src="images/slide-1.jpg" class="d-block w-100 h-100" alt="...">
+            <div class="carousel-caption   m-auto rounded">
+              <h3>Home Repair Services</h3>
+              <p>Kitchens, Baths, Walls, Floors, and More.</p>
+              <button type="button" class="btn btn-outline-dark">Visit Us</button>
+            </div>
+          </div>
+          <div class="carousel-item h-100" data-bs-interval="2000">
+            <img src="images/slide-2.webp" class="d-block w-100 h-100" alt="...">
+            <div class="carousel-caption  m-auto rounded">
+              <h3>Carpentry Services</h3>
+              <p>Build, Construct, Install & More.</p>
+              <button type="button" class="btn btn-outline-dark">Request Service</button>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="images/slide-3.png" class="d-block w-100 h-100" alt="...">
+            <div class="carousel-caption  m-auto rounded">
+              <h3>Handyman Painting Services</h3>
+              <p>Paint, Stain, Spray & More.</p>
+              <button type="button" class="btn btn-outline-dark">Request Service</button>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="images/slide-4.jpg" class="d-block w-100 h-100 " alt="...">
+            <div class="carousel-caption  m-auto rounded">
+              <h3>Plumbing Services</h3>
+              <p>Replace, Repair, Insulate, Install & More.</p>
+              <button type="button" class="btn btn-outline-dark">Request Service</button>
+            </div>
+          </div>
+    </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+        
+      </div>
+      
+      <div class="group-icons container  position-fixed end-0 bottom-0 me-lg-4 me-sm-0   h-100 d-flex flex-column  justify-content-center justify-content-lg-end " style="width: 90px ; z-index: 1000;">
+            
+        <a href=""><i class="fa-brands fa-square-facebook mb-3 "></i></a>
+        <a href=""><i class="fa-brands fa-square-whatsapp  mb-3"></i></a>
+        <a href=""><i class="fa-brands fa-square-twitter mb-3 "></i></a>
+        <a href=""><i class="fa-brands fa-linkedin  mb-3"></i></a>
+        <a href=""><i class="fa-brands fa-square-instagram mb-3"></i></a>
+      </div>
+    
+
+      <div class="card wlcm-card">      
+        <div class="card-body">
+          <h4 class="card-title">WELCOME</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="card spclts-card mb-4">      
+        <div class="card-body  d-flex align-items-center justify-content-center">
+          <h4 class="card-title fw-bolder"> All You Need To Know About Our specialties</h4>
+        </div>
+      </div>
+
+
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header ">
+            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h5 class="fw-bolder">  Carpentry </h5>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p> Mr. Handyman can handle all your exterior repairs and perform installations that enhance the beauty of your home.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h5 class="fw-bolder">  Painting </h5>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Whether you have an indoor or outdoor paint job, our experienced team of home improvement professionals can help.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h5 class="fw-bolder">  Plumbing </h5>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Mr. Handyman provides Drain Repair and Replacement services. Please contact us for more information!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+    <section>
+        <div class="card spclts-card  h-75 ">      
+            <div class="card-body  d-flex align-items-center justify-content-center">
+            <h3 class="card-title fw-bolder"> Translate From Arabic To English </h3>
+            </div>
+        </div>
+
+        <div class="card p-4 trnslt-card">
+                <div class="mb-3">
+                    <h5>Write And Translate <span>Press here</span></h5>
+                </div>
+
+                <div class="mb-3">
+                  <button type="button" class="btn btn-secondary mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied">
+                    Copy
+                  </button>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Traslate : " rows="3"></textarea>
+                </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <div class="card spclts-card  h-75 ">      
+            <div class="card-body  d-flex align-items-center justify-content-center">
+            <h3 class="card-title fw-bolder"> Translate From Arabic To Frensh </h3>
+            </div>
+        </div>
+
+        <div class="card p-4 trnslt-card">
+            <div class="mb-3">
+                <h5>Write And Translate <span>Press here</span></h5>
+            </div>
+
+            <div class="mb-3">
+              <button type="button" class="btn btn-secondary mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied">
+                Copy
+              </button>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Traslate : " rows="3"></textarea>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+    
+    <section>
+        <div class="card spclts-card  h-75 ">      
+            <div class="card-body  d-flex align-items-center justify-content-center">
+            <h3 class="card-title fw-bolder"> Translate From Arabic To German </h3>
+            </div>
+        </div>
+
+        <div class="card p-4 trnslt-card">
+            <div class="mb-3">
+                <h5>Write And Translate <span>Press here</span></h5>
+            </div>
+
+            <div class="mb-3">
+              <button type="button" class="btn btn-secondary mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Copied">
+                Copy
+              </button>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Traslate : " rows="3"></textarea>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="empty-card overflow-hidden ">
+      <div class="w-100 h-100"></div>
+    </section>
+
+    <div class="card spclts-card  h-75 mb-5 ">      
+      <div class="card-body  d-flex align-items-center justify-content-center">
+      <h3 class="card-title fw-bolder">Popular Tasks </h3>
+      </div>
+    </div>
+
+
+    <div class="row row-cols-1 row-cols-md-3 h-100 w-100 row-cards text-alighn-center d-flex justify-content-center mt-3 mb-5 g-5 ">
+      <div class="col ">
+        <div class="card  m-auto">
+          <img src="images/card1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <h5 class="card-title fw-bolder">Featured Tasks</h5>
+              <button type="button" class="btn btn-dark mb-2">Know More</button>
+            </div>
+            <p class="card-text">Furniture Assembly, TV Mounting, Home Repairs....</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card  m-auto">
+          <img src="images/card2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <h5 class="card-title fw-bolder">Handyman</h5>
+              <button type="button" class="btn btn-dark mb-2">Know More</button>
+            </div>
+            <p class="card-text">Door, Cabinet, & Furniture Repair.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col ">
+        <div class="card  m-auto">
+          <img src="images/card3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <h5 class="card-title fw-bolder">Pressure Washing</h5>
+              <button type="button" class="btn btn-dark mb-2">Know More</button>
+            </div>
+            <p class="card-text">Gutters, Pressure Washing, Siding.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card m-auto">
+          <img src="images/card4.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <h5 class="card-title fw-bolder">Flooring</h5>
+              <button type="button" class="btn btn-dark mb-2">Know More</button>
+            </div>
+            <p class="card-text">Kitchen, Bathroom, Entryway.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card m-auto">
+          <img src="images/card5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <h5 class="card-title fw-bolder">Drywall and Walls</h5>
+              <button type="button" class="btn btn-dark mb-2">Know More</button>
+            </div>
+            <p class="card-text">Drywall, Crown Molding, Nail Pops and More.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card m-auto">
+          <img src="images/card6.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <h5 class="card-title fw-bolder">Deck Repair</h5>
+              <button type="button" class="btn btn-dark mb-2">Know More</button>
+            </div>
+            <p class="card-text">Expanding the deck , A fresh coat does wonders, Painting and More.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col ">
+        <div class="card m-auto">
+          <img src="images/card7.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <h5 class="card-title fw-bolder">Cleaning Services</h5>
+              <button type="button" class="btn btn-dark mb-2">Know More</button>
+            </div>
+            <p class="card-text">House Cleaning Services, Deep Cleaning, Move In Cleaning.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col ">
+        <div class="card m-auto">
+          <img src="images/card8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <h5 class="card-title fw-bolder">Lighting Modifications</h5>
+              <button type="button" class="btn btn-dark mb-2">Know More</button>
+            </div>
+            <p class="card-text">Upgrade Lighting, Let the Light In, Simplify the Kitchen Layout..</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="empty-card empty-card2 overflow-hidden ">
+      <div class="w-100 h-100"></div>
+    </section>
+
+    <hr>
+    
+    <div class="card spclts-card  h-75 mb-5 ">      
+      <div class="card-body  d-flex align-items-center justify-content-center">
+      <h3 class="card-title fw-bolder">Thanks For </h3>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 w-100  mb-5  d-flex justify-content-center Thanks ">
+
+      <div class="col col-md-3   " >
+        <div class="card w-100 h-100 rounded-5 overflow-hidden">
+          <img src="images/person1.webp" class="card-img-top w-100 h-100 position-relative " alt="...">
+
+          <div class="w-100 h-100 position-absolute">
+            <div class="w-100 h-100   position-absolute up-cover d-flex flex-column justify-content-between p-4">
+              <div>
+                <h5>All Thanks And Appreciation</h5>
+                <p><i class="fa-regular fa-clock"></i> Octoper 15, 2020</p>
+              </div>
+              <div class="d-flex flex-column">
+                <img src="images/person1.webp" class="rounded-circle  border border-3 border-secondary-subtle" alt="...">
+                <span>Ahmed Abd El Fattah </span><p> The plumber</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-md-3 mb-md-4 mb-lg-0 me-4 ms-4">
+        <div class="card w-100 h-100 rounded-5 overflow-hidden">
+          <img src="images/person2.png" class="card-img-top w-100 h-100 position-relative " alt="...">
+
+          <div class="w-100 h-100 position-absolute">
+            <div class="w-100 h-100   position-absolute up-cover d-flex flex-column justify-content-between p-4">
+              <div>
+                <h5>All Thanks And Appreciation</h5>
+                <p><i class="fa-regular fa-clock"></i> Octoper 15, 2020</p>
+              </div>
+              <div class="d-flex flex-column">
+                <img src="images/person2.png" class="rounded-circle border border-3 border-secondary-subtle" alt="...">
+                <span>Ahmed Abd El Fattah </span><p> The plumber</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col col-md-3   ">
+        <div class="card w-100 h-100 rounded-5 overflow-hidden">
+          <img src="images/person3.avif" class="card-img-top w-100 h-100 position-relative " alt="...">
+
+          <div class="w-100 h-100 position-absolute">
+            <div class="w-100 h-100   position-absolute up-cover d-flex flex-column justify-content-between p-4">
+              <div>
+                <h5>All Thanks And Appreciation</h5>
+                <p><i class="fa-regular fa-clock"></i> Octoper 15, 2020</p>
+              </div>
+              <div class="d-flex flex-column">
+                <img src="images/person3.avif" class="rounded-circle  border border-3 border-secondary-subtle" alt="...">
+                <span>Ahmed Abd El Fattah </span><p> The plumber</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <a class="icon-link icon-link-hover link-success link-underline-success link-underline-opacity-0" href="#">
+      /Thanks Card->
+      <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+    </a>
+
+    <hr>
+  
+<!----------------------------------------------------------------------------->
+    <div class="card border border-0 h-75  ">      
+      <div class="card-body  d-flex align-items-center justify-content-center">
+      <h3 class="card-title fw-bolder">Our News</h3>
+      </div>
+    </div>
+
+    <div class="card mb-3  m-auto shadow overflow-hidden mb-5 bg-body-tertiary rounded card-news card-news1">
+      <div class="row  h-100">
+        <div class="col-md-8">
+          <div class="card-body p-4">
+            <h3 class="card-title">Poscast Title</h3>
+            <p class="card-text fw-bolder m-0 "><i class="fa-solid fa-table-cells"></i> Mon, May 25th 2020</p>
+
+            <hr class="border hr1 rounded border-3 opacity-75 mt-2 mb-1">
+
+            <p class="card-text fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="card-text mt-5"><small class="text-body-secondary">
+              <button type="button" class="btn btn-secondary"><i class="fa-solid fa-tag"></i>Podcast</button>
+              <button type="button" class="btn btn-secondary"><i class="fa-solid fa-clock"></i>55 mins.</button>
+              <button type="button" class="btn btn-secondary btn1"><i class="fa-solid fa-play"></i>play Episode</button>
+            </small>
+          </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="images/News1.jpg" class="img-fluid h-100 new-pic1" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3  m-auto shadow overflow-hidden mb-5 bg-body-tertiary rounded card-news card-news2">
+      <div class="row  h-100">
+        <div class="col-md-4">
+          <img src="images/News2.jpg " class="img-fluid h-100 new-pic2" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body p-4">
+            <h3 class="card-title">Poscast Title</h3>
+            <p class="card-text fw-bolder m-0 "><i class="fa-solid fa-table-cells"></i> Mon, May 25th 2020</p>
+
+            <hr class="border hr2 rounded border-3 opacity-75 mt-2 mb-1">
+
+            <p class="card-text fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="card-text mt-5"><small class="text-body-secondary">
+              <button type="button" class="btn btn-secondary"><i class="fa-solid fa-tag"></i>Podcast</button>
+              <button type="button" class="btn btn-secondary"><i class="fa-solid fa-clock"></i>55 mins.</button>
+              <button type="button" class="btn btn-secondary btn2"><i class="fa-solid fa-play"></i>play Episode</button>
+            </small>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3  m-auto shadow overflow-hidden mb-5 bg-body-tertiary rounded card-news card-news1">
+      <div class="row  h-100">
+        <div class="col-md-8">
+          <div class="card-body p-4">
+            <h3 class="card-title">Poscast Title</h3>
+            <p class="card-text fw-bolder m-0 "><i class="fa-solid fa-table-cells"></i> Mon, May 25th 2020</p>
+
+            <hr class="border hr3 rounded border-3 opacity-75 mt-2 mb-1">
+
+            <p class="card-text fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="card-text mt-5"><small class="text-body-secondary">
+              <button type="button" class="btn btn-secondary"><i class="fa-solid fa-tag"></i>Podcast</button>
+              <button type="button" class="btn btn-secondary"><i class="fa-solid fa-clock"></i>55 mins.</button>
+              <button type="button" class="btn btn-secondary btn3"><i class="fa-solid fa-play"></i>play Episode</button>
+            </small>
+          </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="images/News3.webp" class="img-fluid h-100 new-pic1" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3  m-auto shadow overflow-hidden mb-5 bg-body-tertiary rounded card-news card-news2">
+      <div class="row  h-100">
+        <div class="col-md-4">
+          <img src="images/News4.jpg" class="img-fluid h-100 new-pic2" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body p-4">
+            <h3 class="card-title">Poscast Title</h3>
+            <p class="card-text fw-bolder m-0 "><i class="fa-solid fa-table-cells"></i> Mon, May 25th 2020</p>
+
+            <hr class="border hr4 rounded border-3 opacity-75 mt-2 mb-1">
+
+            <p class="card-text fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="card-text mt-5"><small class="text-body-secondary">
+              <button type="button" class="btn btn-secondary"><i class="fa-solid fa-tag"></i>Podcast</button>
+              <button type="button" class="btn btn-secondary"><i class="fa-solid fa-clock"></i>55 mins.</button>
+              <button type="button" class="btn btn-secondary btn4"><i class="fa-solid fa-play"></i>play Episode</button>
+            </small>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!----------------------------------------------------------------------------->
+<div class="row row-cols-1 row-cols-md-4 join-us m-auto  d-flex justify-content-between">
+
+    <div class="col-md-2 card text-center mb-4  rounded p-1" >
+      <div class="card-body p-1">
+        <h6 >Subscribe Now</h6>
+        <i class="fa-brands fa-twitter shadow m-auto mb-2 mt-3 bg-dark d-flex align-items-center justify-content-center rounded "style="color: rgb(0, 131, 231);"></i>
+        <h6>Go To Link </h6>
+      </div>
+    </div>
+
+    <div class="col-md-2 card text-center mb-4 rounded p-1">
+      <div class="card-body p-1">
+        <h6 >Subscribe Now</h6>
+        <i class="fa-brands fa-whatsapp shadow m-auto mb-2 mt-3 bg-dark d-flex align-items-center justify-content-center rounded " style="color: seagreen;"></i>
+        <h6>Go To Link </h6>
+      </div>
+    </div>
+
+    <div class="col-md-2 card text-center mb-4 rounded p-1">
+      <div class="card-body p-1">
+        <h6 >Subscribe Now</h6>
+        <i class="fa-brands fa-linkedin-in shadow m-auto mb-2 mt-3 bg-dark d-flex align-items-center justify-content-center rounded " style="color: rgb(0, 131, 231);"></i>
+        <h6>Go To Link </h6>
+      </div>
+    </div>
+
+    <div class="col-md-2 card text-center mb-4 rounded p-1">
+      <div class="card-body p-1">
+        <h6 >Subscribe Now</h6>
+        <i class="fa-brands fa-instagram shadow m-auto mb-2 mt-3 bg-dark d-flex align-items-center justify-content-center rounded " style="color: rgb(227, 0, 231);"></i>
+        <h6>Go To Link </h6>
+      </div>
+    </div>
+
+</div>
+<!----------------------------------------------------------------------------->
+
+<section class="footer text-center pb-5 d-flex justify-content-center flex-column ">
+  <div class="row  row-cols-1 row-cols-md-3 w-100"> 
+
+    <div class=" col h-50 ">
+      <div class="  h-100  p-2 ">
+        <div class="caption w-100 d-flex justify-content-center align-items-center border-3 border-top border-bottom border-light-subtle"style="height: 90px;">
+              <img src="images/logo.png" class=" bg-body-tertiary  rounded-circle me-3 p-2" style="height: 70px; width: 70px;">
+              <h5 style="color: #fff;">Goog Company</h5>
+        </div>
+        <div class=" d-flex align-items-center flex-column justify-content-around">
+          <a href="" class="mt-3 text-decoration-none a1">Tell: 000-000-000</a>
+          <a href="" class="mt-3 text-decoration-none a1">Address: EYGPT</a>
+          <a href="" class="mt-3 text-decoration-none a1">Fax: 000-000-000</a>
+        </div>
+      </div>
+    </div>
+
+    <div class=" col h-50 ">
+      <div class="  h-100  p-2 ">
+        <div class="caption w-100 d-flex justify-content-center align-items-center border-3 border-top border-bottom border-light-subtle"style="height: 90px;">
+              <img src="images/logo.png" class=" bg-body-tertiary  rounded-circle me-3 p-2" style="height: 70px; width: 70px;">
+              <h5 style="color: #fff;">Important Links</h5>
+        </div>
+        <div class=" d-flex align-items-center flex-column justify-content-around">
+          <a href="" class="mt-3 text-decoration-none a2">Visit Us</a>
+          <a href="" class="mt-3 text-decoration-none a2">Take Alook</a>
+          <a href="" class="mt-3 text-decoration-none a2">Your Health Are Important</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class=" col h-50 ">
+      <div class="  h-100  p-2 ">
+        <div class="caption w-100 d-flex justify-content-center align-items-center border-3 border-top border-bottom border-light-subtle"style="height: 90px;">
+              <img src="images/logo.png" class=" bg-body-tertiary  rounded-circle me-3 p-2" style="height: 70px; width: 70px;">
+              <h5 style="color: #fff;">Vision</h5>
+        </div>
+        <div class=" d-flex align-items-center flex-column justify-content-around">
+          <a href="" class="mt-3 text-decoration-none a1">Serveices For All</a>
+          <a href="" class="mt-3 text-decoration-none a1">Provide Best Serveices</a>
+          <a href="" class="mt-3 text-decoration-none a1">You Will Be Better Than Before</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <div class="  border-3 border-top border-bottom border-light-subtle rounded-0 p-3 bg-transparent mt-4  ">      
+    <div class="card-body  d-flex align-items-center justify-content-center">
+    <h3 class="card-title fw-bolder">Copy Right &copy; 2024 Menna Hany Fathy, Goog Company, All Rights.</h3>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script>
+
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      });
+
+  function scrollValue() {
+    var navbar = document.getElementById('navbar');
+    var scroll = window.scrollY;
+    if (scroll < 200) {
+        navbar.classList.remove('BgColour');
+    } else {;
+        navbar.classList.add('BgColour');
+    }
+}
+
+window.addEventListener('scroll', scrollValue);
+</script>
+</body>
+</html>
